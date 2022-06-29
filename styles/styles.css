@@ -370,7 +370,7 @@ header .song_side::before{
     background:url('/images/sidhu.jpg') no-repeat;
     background-size: 30%;
     margin-left: 50%;
-    z-index: -2;
+    z-index: -1;
 }
 header .song_side nav{
     width: 90%;
@@ -621,4 +621,195 @@ header .song_side .popular_artists .item li img{
     height: 70%;
     border-radius: 50%;
     position: absolute;
+}
+@media (max-width:1330px) {
+   
+    header .menu_side, .song_side{
+        width: 20%;
+    }
+    div.search{
+        margin-right: 15%;
+    }
+    header .menu_side .playlist h4 {
+        word-break: break-word;
+        font-size: 10px;
+    }
+    header {
+        width: 100%;
+    }
+    header .song_side {
+        width: 80%;
+   } 
+   body{
+    font-size: 10px;  
+   }
+}
+
+@media (max-width:1050px){
+    
+    header .menu_side .menu_song li {
+        margin-left: -17px;
+    }
+}
+@media (max-width:983px){
+    .fa-play-circle:before {
+        visibility: hidden;
+    }
+    header .master_play .icon {
+        margin: 0px -16px 0px -25px;
+    }
+    header .master_play {
+        padding: 0px 5px;
+    }
+}
+@media (max-width:1134px){
+    header .master_play .icon {
+        margin: 0px -16px 0px -25px;
+        font-size: 10px;
+    }
+}
+@media (max-width:914px){
+    header .master_play .bar {
+        width: 34%;
+    }
+}
+@media (max-width:850px){
+    header .song_side .content h1{
+        font-size: 15px;
+    }
+    header .song_side .content .buttons button {
+        width: 75px;
+        height: 17px;
+        margin-top: -5px;
+        font-size: 10px;
+    }
+    header .song_side .content p {
+        font-size: 10px;
+        margin: -1px;
+    }
+    header .song_side .popular_song {
+        
+        margin-top: -10px;
+    }
+    header .song_side .popular_song {
+        width: 90%;
+        height: auto;
+        margin-top: -10px;
+    }
+    header .song_side nav ul li {
+        font-size: 10px;
+    }
+    header .menu_side .playlist h4 { 
+        padding-bottom: 4px;
+    }
+    header .menu_side .menu_song {
+        width: 100%;
+        height: 5px;
+        margin-top: 5px;
+    }
+    header .menu_side .menu_song li {
+        
+        padding: 0px 0px 5px 17px;
+        
+        margin-bottom: 10px;
+        
+    }
+    header .menu_side .menu_song li h5 {
+        font-size: 8px;
+        margin-left: 11px;
+    }
+    header .menu_side .menu_song li h5 .subtitle {
+        font-size: 8px;
+    }
+    header .master_play h5 {
+        
+        font-size: 9px;
+        margin-left: 13px;
+        line-height: 14px;
+    }
+    header .master_play h5 .subtitle {
+        font-size: 9px;
+       
+    }
+    header .menu_side h1 {
+        font-size: 13px;
+        margin: 3px 0px 0px 20px;
+      
+    }
+    header .song_side nav ul li {
+       
+        margin-right: 21px;
+        
+    }
+    .bi-volume-down-fill::before {
+        
+        font-size: 18px;
+        
+    }
+    header .master_play .vol{
+        
+        width: 50px;
+        
+        margin-left: 100px;
+        
+    }
+    header .master_play .vol .bi{
+        
+        font-size: 15px;
+        top: -10px;
+        left: -30px;
+    }
+}
+
+
+@media (width:786px){
+    header .master_play .bar {
+        width: 33%;
+    }
+}
+@media (max-width:782px){
+    header .master_play .bar {
+        width: 26%;
+    }
+    
+}
+@media (max-width:762px){
+    header .song_side nav .search {
+        
+        width: 24%;
+        padding: -15px 6px;
+        border-radius: 20px;
+        color: gray;
+    }
+}
+@media (max-width:708px){
+    header .master_play .bar {
+        width: 15%;
+    }
+    header .menu_side .menu_song li img {
+        
+        margin-left: 10px;
+    }
+}
+@media (max-width:618px){
+    header .master_play .bar {
+        width: 10%;
+    }
+}
+@media (max-width:680px){
+    header .song_side nav .user img {
+        
+        right: 3px;
+    }
+}
+@media (max-width:590px){
+    header .master_play .bar {
+        width: 6%;
+    }
+}
+@media (max-width: 545px){
+ header .master_play .icon {
+    margin: 0px -12px 0px -73px;
+    font-size: 8px;
+} 
 }

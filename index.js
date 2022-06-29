@@ -99,6 +99,32 @@ Array.from(document.getElementsByClassName('songItem')).forEach((element,i)=>{
 
 })
 
+let play_btn=document.getElementById('play');
+play_btn.addEventListener('click',()=>{
+    music.src=`audio/11.mp3`;
+    
+
+    poster_master_play.src=`images/11.jpg`;  // picture is changed when choose music in masterplay
+    if (music.paused || music.currentTime<=0) {
+        music.play();
+        master_play.classList.remove('fa-play');
+        master_play.classList.add('fa-pause');
+        wave.classList.add('active2');
+    } else {
+        music.pause();
+        master_play.classList.add('fa-play');
+        master_play.classList.remove('fa-pause');
+        wave.classList.remove('active2');
+    }
+
+        title.innerHTML=`295 <br>
+        <div class="subtitle">Sidhu Moosewala</div>`;  
+        
+})
+
+function btnClicked(){
+    document.location.href="https://www.youtube.com/c/SidhuMooseWalaOfficial"
+}
 
 let master_play= document.getElementById('masterPlay');
 let wave=document.getElementsByClassName('wave')[0];
