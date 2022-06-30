@@ -16,7 +16,7 @@ body{
 
 header{
     width: 85%;
-    height: 95%;
+    height: 99%;
     /* border: 1px solid #fff; */
     display: flex;
     flex-wrap: wrap;
@@ -762,14 +762,28 @@ header .song_side .popular_artists .item li img{
 }
 
 
-@media (width:786px){
-    header .master_play .bar {
-        width: 33%;
-    }
-}
+
 @media (max-width:782px){
     header .master_play .bar {
-        width: 26%;
+        width: 35%;
+    }
+    header .master_play .icon {
+        margin: 0px -18px 0px -22px;
+        font-size: 8.5px;
+        position: relative;
+        left: 11px;
+        width: 28%;
+    }
+    .bi-volume-down-fill::before {
+        font-size: 16px;
+        position: relative;
+        left: 3px;
+    }
+    header .master_play .vol {
+        width: 50px;
+        margin-left: 100px;
+        position: relative;
+        right: 18px;
     }
     
 }
@@ -783,33 +797,161 @@ header .song_side .popular_artists .item li img{
     }
 }
 @media (max-width:708px){
-    header .master_play .bar {
-        width: 15%;
-    }
+    
     header .menu_side .menu_song li img {
         
         margin-left: 10px;
     }
 }
-@media (max-width:618px){
-    header .master_play .bar {
-        width: 10%;
-    }
-}
+
 @media (max-width:680px){
     header .song_side nav .user img {
         
         right: 3px;
     }
 }
-@media (max-width:590px){
-    header .master_play .bar {
-        width: 6%;
-    }
-}
+
 @media (max-width: 545px){
- header .master_play .icon {
-    margin: 0px -12px 0px -73px;
-    font-size: 8px;
-} 
+    body {
+        height: 104vh;
+    }
+    header .menu_side .playlist h4 {
+        padding-bottom: 5px;
+    }
+    header .menu_side h1 {
+        margin: 10px 0px 2px 14px;
+    }
+    header .menu_side .playlist {
+        margin: 13px 0px 11px 2px;
+    }
+    header .song_side {
+        width: 68%;
+        position: relative;
+        
+    }
+    header .menu_side, .song_side {
+        width: 32%;
+    }
+    header .song_side nav ul li {
+        margin-right: 10px;
+    }
+    header .song_side nav ul li {
+        font-size: 9px;
+    }
+    header .song_side nav .search {
+        width: 47%;
+        padding: -15px 6px;
+    }
+    header .song_side nav .search {
+        position: relative;
+        width: 40%;
+        padding: 0px 0px;
+    }
+    div.search {
+        margin-right: 7%;
+    }
+    header .song_side .popular_song .pop_song li .img_play img {
+        width: 80%;
+        height: 80%;
+    }
+    header .song_side .popular_song .pop_song {
+        
+        height: 135px;
+        margin-top: 41px;
+    }
+    header .song_side .popular_song .h4 {
+        position: relative;
+        top: 34px;
+    }
+    header .song_side nav .search input {
+        padding: 0px 8px;
+        font-size: 8px;
+    }
+    header .song_side nav .user img {
+        
+        width: 28px;
+        height: 28px;
+    }
+    header .song_side nav {
+        
+        margin: 0px;
+    }
+    header .menu_side .menu_song li span {
+        font-size: 8px;
+    }
+    header .master_play .wave {
+        width: 15px;
+        height: 15px;
+        margin-right: 2px;
+    }
+    header .master_play #currentStart {
+        margin: 0px -60px 0px 40px;
+    }
+    header .master_play #currentEnd {
+        position: relative;
+        left: 45px;
+    }
+    header .master_play span {
+        width: 24px;
+        font-size: 8px;
+    }
+    header .master_play h5 {
+        font-size: 6px;
+        margin-left: 1px;
+        width: 441px;
+    }
+    header .master_play h5 .subtitle {
+        font-size: 6px;
+    }
+    header .master_play {
+        padding: 0px 2px;
+        position: relative;
+     top: -10px;
+    }
+    header .master_play .vol .bi {
+        left: -45px;
+    }
+    header .master_play .icon {
+        margin: 0px 17px 0px -376px;
+        font-size: 6.5px;
+        position: relative;
+        left: 54px;
+        width: 23%;
+    }
+header .master_play .bar {
+    width: 23%;
+    position: relative;
+    left: 55px;
 }
+.bi-volume-down-fill::before {
+    font-size: 16px;
+    position: relative;
+    left: 25px;
+}
+header .master_play .vol {
+    width: 50px;
+    margin-left: 100px;
+    position: relative;
+    right: 10px;
+}
+
+    }
+    @media (max-width: 534px){
+        header .song_side nav ul li span {
+           bottom: 10px;
+        }
+    }
+    @media(max-width: 325px){
+        header .master_play h5 {
+            font-size: 6px;
+            margin-left: 1px;
+            width: 426px;
+        }
+    header .master_play .icon {
+    margin: 0px -2px 0px -205px;
+    font-size: 6px;
+    position: relative;
+    left: 34px;
+    width: 42%;
+  }
+    }
